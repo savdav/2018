@@ -1,0 +1,94 @@
+<html>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<head>
+    	<title>SavDav</title>
+
+    	<style>
+	    	body {}
+			h1   {}
+			.flex-row {
+  				display: flex;
+  				justify-content: center;
+  				flex-direction: row;
+  				font-family: 'Poppins', sans-serif;
+			}
+			.flex-col {
+  				display: flex;
+  				flex-direction: column;
+			}
+			.our-names {
+				margin-top: 18px;
+				/*font-size: 2em;*/
+				text-align: center;
+			}
+			.flex-image {
+				object-fit: scale-down;
+				object-position: 50% 50%;
+				max-width:100%;
+				max-height:70%;
+				height:auto;
+			}
+			.signature {
+				margin-top: 18px;
+				max-height: 17%;
+				padding-left: 10vw;
+				padding-right: 10vw;
+			}
+
+			@media (min-width: 1281px) {
+			  .our-names {
+				font-size: 4em;
+			  }
+
+			  .subtitle {
+				font-size: 1.8em;
+			  }
+			  
+			}
+
+			@media (min-width: 1025px) and (max-width: 1280px) {
+			  
+			  .our-names {
+				font-size: 4.5em;
+			  }
+
+			  .subtitle {
+				font-size: 2em;
+			  }
+			  
+			}
+
+			@media (max-width: 1024px) {
+			  
+			  .our-names {
+				font-size: 5em;
+			  }
+
+			  .subtitle {
+				font-size: 2.2em;
+			  }
+			  
+			}
+
+			@media (max-width: 1024px) and (orientation: landscape) {
+			  .our-names {
+				font-size: 4.5em;
+			  }
+
+			  .subtitle {
+				font-size: 2.0em;
+			  }
+			  
+			}
+    	</style>
+	</head>
+	<body>
+		<div class="flex-col">
+		  <img class="flex-image" src="./blam.png" />
+		  <img class="flex-image signature" src="./signature.png" />
+		  <!--<div class="flex-row push-up"><div class="our-names">Savannah & David</div></div>-->
+		  <div class="flex-row subtitle">November 3, 2018</div>
+		  <div class="flex-row subtitle">Berkeley, CA</div>
+		</div>
+	</body>
+</html>
