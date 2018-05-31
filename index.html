@@ -35,6 +35,29 @@
 				padding-right: 10vw;
 			}
 
+			.when-where {
+  				object-position: 50% 0%;
+				max-height: 15%;
+			}
+
+
+
+			@media (min-width: 1025px) {
+				.when-where {
+					padding-left: 10vw;
+					padding-right: 10vw;
+				}
+			}
+
+			@media (max-width: 1024px) {
+				.when-where {
+					padding-left: 25vw;
+					padding-right: 25vw;
+				}
+			}
+
+			/*
+
 			@media (min-width: 1281px) {
 			  .our-names {
 				font-size: 4em;
@@ -80,15 +103,17 @@
 			  }
 			  
 			}
+			*/
     	</style>
 	</head>
 	<body>
 		<div class="flex-col">
 		  <img class="flex-image" src="./blam.png" />
 		  <img class="flex-image signature" src="./signature.png" />
+		  <img class="flex-image when-where" src="./when-where.png" />
 		  <!--<div class="flex-row push-up"><div class="our-names">Savannah & David</div></div>-->
-		  <div class="flex-row subtitle">November 3, 2018</div>
-		  <div class="flex-row subtitle">Berkeley, CA</div>
+		  <!--<div class="flex-row subtitle">November 3, 2018</div>
+		  <div class="flex-row subtitle">Berkeley, CA</div>-->
 		</div>
 	</body>
 </html>
