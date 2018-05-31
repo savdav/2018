@@ -4,22 +4,23 @@
     	<title>SavDav</title>
 
     	<style>
-	    	body {}
+	    	body {
+	    		margin: 0px;
+	    	}
 			h1   {}
+			h2 {
+				margin: 10px;
+			}
 			.flex-row {
   				display: flex;
   				justify-content: center;
+  				text-align: center;
   				flex-direction: row;
   				font-family: 'Poppins', sans-serif;
 			}
 			.flex-col {
   				display: flex;
   				flex-direction: column;
-			}
-			.our-names {
-				margin-top: 18px;
-				/*font-size: 2em;*/
-				text-align: center;
 			}
 			.flex-image {
 				object-fit: scale-down;
@@ -34,86 +35,79 @@
 				padding-left: 10vw;
 				padding-right: 10vw;
 			}
-
 			.when-where {
   				object-position: 50% 0%;
 				max-height: 15%;
+				padding-left: 15vw;
+				padding-right: 15vw;
 			}
-
+			.footer {
+				margin-bottom: 150px;
+			}
+			.padded {}
 
 
 			@media (min-width: 1025px) {
-				.when-where {
+				.h1 {
+					font-size: 2em;
+				}
+				.padded {
 					padding-left: 10vw;
 					padding-right: 10vw;
 				}
-			}
-
-			@media (max-width: 1024px) {
-				.when-where {
-					padding-left: 25vw;
-					padding-right: 25vw;
+				.text {
+					font-size: 1.2em;
 				}
 			}
 
-			/*
-
-			@media (min-width: 1281px) {
-			  .our-names {
-				font-size: 4em;
-			  }
-
-			  .subtitle {
-				font-size: 1.8em;
-			  }
-			  
-			}
-
-			@media (min-width: 1025px) and (max-width: 1280px) {
-			  
-			  .our-names {
-				font-size: 4.5em;
-			  }
-
-			  .subtitle {
-				font-size: 2em;
-			  }
-			  
-			}
-
 			@media (max-width: 1024px) {
-			  
-			  .our-names {
-				font-size: 5em;
-			  }
-
-			  .subtitle {
-				font-size: 2.2em;
-			  }
-			  
+				.h1 {
+					font-size: 2.8em;
+				}
+				.padded {
+					padding-left: 10vw;
+					padding-right: 10vw;
+				}
+				.text {
+					font-size: 2em;
+				}
 			}
-
-			@media (max-width: 1024px) and (orientation: landscape) {
-			  .our-names {
-				font-size: 4.5em;
-			  }
-
-			  .subtitle {
-				font-size: 2.0em;
-			  }
-			  
-			}
-			*/
+			
     	</style>
 	</head>
 	<body>
 		<div class="flex-col">
 		  <img class="flex-image" src="./blam.png" />
 		  <img class="flex-image signature" src="./signature.png" />
+		  
 		  <img class="flex-image when-where" src="./when-where.png" />
-		  <!--<div class="flex-row push-up"><div class="our-names">Savannah & David</div></div>-->
-		  <!--<div class="flex-row subtitle">November 3, 2018</div>
-		  <div class="flex-row subtitle">Berkeley, CA</div>-->
+		  <br /><br /><br />
+		  <div class="flex-col padded">
+		  	<div class="flex-row"><h1>Ceremony</h1></div>
+		  	<div class="flex-row text">1:30 pm</div>
+		  </div>
+		  <div class="flex-row padded">
+		  	<p class="text">UC Botanical Garden Redwood Grove<br />67 Centennial Dr, Berkeley, CA 94705</p>
+		  </div>
+		  <div class="flex-row padded">
+		  	<h1>Reception</h1>
+		  </div>
+		  <div class="flex-row padded">
+		  	<p class="text">Hillside Club<br/>2286 Cedar St, Berkeley, CA 94709</p>
+		  </div>
+		  <div class="flex-row padded">
+		  	<h1>Accommodations</h1>
+		  </div>
+		  <div class="flex-row padded">
+		  	<p class="text">Check out nearby <a href="https://www.airbnb.com/s/Berkeley--CA--United-States/homes?refinement_paths%5B%5D=%2Fhomes&place_id=ChIJ00mFOjZ5hYARk-l1ppUV6pQ&checkin=2018-11-02&checkout=2018-11-04&query=Berkeley%2C%20CA%2C%20United%20States&allow_override%5B%5D=&neighborhood_ids%5B%5D=3660&neighborhood_ids%5B%5D=3655&neighborhood_ids%5B%5D=3664&neighborhood_ids%5B%5D=3653&s_tag=3ZQPGswO">Airbnbs</a> or <a href="https://www.google.com/maps/search/hotel/@37.8761622,-122.290911,14z/data=!4m5!2m4!5m3!5m2!1s2018-11-02!2i2">hotels</a> available for the weekend.</p>
+		  </div>
+		  <div class="flex-row padded">
+		  	<h1>Transportation</h1>
+		  </div>
+		  <div class="flex-row padded footer">
+		  	<p class="text">Catch a Lyft/Uber to the Redwood Grove. Parking is limited. <br/>
+		  	We'll provide transportation to the reception.</p>
+		  </div>
 		</div>
 	</body>
 </html>
